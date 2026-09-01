@@ -1,9 +1,20 @@
-# TabScholar
+<p align="center">
+  <img src="brand/tabscholar-logo-source.png" alt="TabScholar logo" width="190" />
+</p>
 
-TabScholar is a local-first browser extension for studying material that the
-learner intentionally provides. It offers explanations, progressive hints,
-retrieval practice, and reasoning feedback without reading or controlling
-third-party websites.
+<h1 align="center">TabScholar</h1>
+
+<p align="center">
+  A local-first browser extension for studying material you intentionally provide—without reading or controlling third-party websites.
+</p>
+
+<p align="center">
+  <a href="https://github.com/jacksonmmaynard-oss/TabScholar/actions/workflows/ci.yml"><img src="https://github.com/jacksonmmaynard-oss/TabScholar/actions/workflows/ci.yml/badge.svg" alt="Verification status" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-29288f" alt="MIT License" /></a>
+</p>
+
+TabScholar offers explanations, progressive hints, retrieval practice, and
+reasoning feedback for learner-provided material.
 
 This repository is a standalone project. It does not contain code, assets, or
 Git history from another extension.

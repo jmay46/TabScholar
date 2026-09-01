@@ -7,5 +7,5 @@
 - Kept provider keys out of extension code and storage.
 - Added a bundled synthetic browser-extension security lab.
 - Added permission-boundary tests, documentation, and CI.
-- Deferred all logo and icon integration pending owner-supplied artwork.
+- Added owner-supplied logo artwork, browser icon exports, and repository branding.
 

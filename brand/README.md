@@ -10,5 +10,11 @@ Regenerate the 16, 32, 48, and 128 pixel extension assets on Windows with:
 npm run icons
 ```
 
+Regenerate the 1280 × 640 GitHub social-preview image with:
+
+```powershell
+npm run social-preview
+```
+
 The artwork is not covered by the repository's MIT software license. See
 `NOTICE.md` for its separate rights notice.

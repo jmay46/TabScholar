@@ -8,6 +8,7 @@
     "start": "node companion/server.mjs",
     "preview": "node scripts/preview.mjs",
     "icons": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/generate-icons.ps1",
+    "social-preview": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/generate-social-preview.ps1",
     "check": "node scripts/check.mjs",
     "test": "node --test",
     "verify": "npm run check && npm test"
