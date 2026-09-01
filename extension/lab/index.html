@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TabScholar Safe Lab</title>
+    <link rel="stylesheet" href="lab.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-brand">
+        <img src="../assets/icon128.png" alt="" width="72" height="72" />
+        <div>
+          <p class="eyebrow">BUNDLED SYNTHETIC ENVIRONMENT</p>
+          <h1>TabScholar Safe Lab</h1>
+        </div>
+      </div>
+      <span class="local-badge">Extension-local page</span>
+    </header>
+
+    <main>
+      <section class="lesson-card">
+        <div class="lesson-heading">
+          <div>
+            <p class="course-name">Browser Extension Security 101</p>
+            <h2>Practice: least-privilege permissions</h2>
+          </div>
+          <span class="practice-badge">Practice only</span>
+        </div>
+
+        <div id="practiceMaterial" class="practice-material">
+          <p>
+            A browser extension sends text that a user manually enters to a
+            companion service running on the same computer. Which permission
+            design best follows the principle of least privilege?
+          </p>
+          <ol type="A">
+            <li>Access to every website plus complete tab metadata</li>
+            <li>A specific localhost host permission and session storage</li>
+            <li>Script injection permission on every open tab</li>
+            <li>Blocking network access for every browser request</li>
+          </ol>
+        </div>
+
+        <label for="reasoning">Your reasoning draft</label>
+        <textarea
+          id="reasoning"
+          rows="5"
+          placeholder="Explain which option you would choose and why…"
+        ></textarea>
+
+        <div class="actions">
+          <button id="loadSample" class="secondary-button" type="button">
+            Add sample reasoning
+          </button>
+          <button id="sendToWorkspace" class="primary-button" type="button">
+            Load into TabScholar
+          </button>
+        </div>
+
+        <p id="confirmation" class="confirmation" role="status"></p>
+      </section>
+
+      <aside class="boundary-card">
+        <p class="eyebrow">SECURITY BOUNDARY</p>
+        <h2>What this lab proves</h2>
+        <ul>
+          <li>The practice content ships inside the extension.</li>
+          <li>No third-party page is read, modified, or submitted.</li>
+          <li>Moving material requires an explicit user click.</li>
+          <li>The draft expires after 15 minutes and is consumed or discarded when the popup opens.</li>
+        </ul>
+
+        <div class="flow" aria-label="Data flow">
+          <span>Synthetic page</span>
+          <strong>→</strong>
+          <span>User click</span>
+          <strong>→</strong>
+          <span>Popup draft</span>
+        </div>
+      </aside>
+    </main>
+
+    <script type="module" src="lab.js"></script>
+  </body>
+</html>
